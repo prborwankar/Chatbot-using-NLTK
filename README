@@ -1,1 +1,41 @@
+A simple chat assistant or chatbot using Python’s NLTK library
+https://towardsdatascience.com/build-your-first-chatbot-using-python-nltk-5d07b027e727
+
+A chatbot (also known as a talkbot, chatterbot, Bot, IM bot, interactive agent, or Artificial Conversational Entity) is a computer program or an artificial intelligence which conducts a conversation via auditory or textual methods.
+
+There are 2 imports from nltk.chat.util:
+1. Chat: This is a class that has all the logic that is used by the chatbot.
+2. Reflections: This is a dictionary that contains a set of input values and its corresponding output values. It is an optional dictionary that you can use. You can also create your own dictionary in the same format as below and use it in your code. If you check nltk.chat.util, you will see its values as below:
+
+reflections = {
+  "i am"       : "you are",
+  "i was"      : "you were",
+  "i"          : "you",
+  "i'm"        : "you are",
+  "i'd"        : "you would",
+  "i've"       : "you have",
+  "i'll"       : "you will",
+  "my"         : "your",
+  "you are"    : "I am",
+  "you were"   : "I was",
+  "you've"     : "I have",
+  "you'll"     : "I will",
+  "your"       : "my",
+  "yours"      : "mine",
+  "you"        : "me",
+  "me"         : "you"
+}
+
+
+Creating own reflections dictionary in the same format as above and use it in your code. Example:
+my_dummy_reflections= {
+    "go"     : "gone",
+    "hello"    : "hey there"
+}
+
+and use it as:
+
+chat = Chat(pairs, my_dummy_reflections)
+
+
 
